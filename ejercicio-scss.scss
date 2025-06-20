@@ -1,0 +1,30 @@
+$rectangle-width: 100px;
+$rectangle-height: 200px;
+
+@mixin rectangle-base {
+  width: $rectangle-width;
+  height: $rectangle-height;
+}
+
+.rectangulo-1 {
+  @include rectangle-base;
+  background: #ff0000;
+  
+  &.fondo-1 {
+    background: #aaaaaa;
+  }
+}
+
+.rectangulo-2 {
+  @include rectangle-base;
+  background: #ff0000;
+  
+  &.fondo-2 {
+    background: #000000;
+  }
+}
+
+.rectangulo-3 {
+  @include rectangle-base;
+  background: #ff0000;
+}
