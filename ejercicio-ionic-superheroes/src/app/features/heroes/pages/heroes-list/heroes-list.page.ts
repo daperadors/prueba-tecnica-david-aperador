@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Hero } from 'src/app/features/heroes/models/hero.model';
 import { AlertController } from '@ionic/angular';
 import { HeroesApiService } from '../../services/heroes.service';
+import { Hero } from '../../models/hero.model';
 
 @Component({
   selector: 'app-heroes-list',

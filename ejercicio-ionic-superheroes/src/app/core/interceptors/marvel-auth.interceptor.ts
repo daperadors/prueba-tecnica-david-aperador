@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpInterceptor, HttpRequest, HttpHandler, HttpEvent } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { environment } from 'src/environments/environment';
 import { MarvelAuthService } from '../services/auth/marvel-auth.service';
+import { environment } from '@/environments/environment';
 
 @Injectable()
 export class MarvelAuthInterceptor implements HttpInterceptor {

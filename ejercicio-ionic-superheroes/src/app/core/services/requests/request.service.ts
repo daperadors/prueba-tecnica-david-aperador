@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Platform } from '@ionic/angular';
-import { environment } from 'src/environments/environment';
+import { environment } from '@/environments/environment';
 import { NativeRequestService } from './native-request.service';
 
 @Injectable({

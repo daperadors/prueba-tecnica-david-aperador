@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { NavController } from '@ionic/angular';
-import { Hero } from 'src/app/features/heroes/models/hero.model';
+import { Hero } from '../../models/hero.model';
 
 @Component({
   selector: 'app-heroes-detail',
