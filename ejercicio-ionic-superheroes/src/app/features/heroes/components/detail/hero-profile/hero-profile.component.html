@@ -1,0 +1,21 @@
+<div class="hero-profile">
+  <div class="hero-image-container">
+    <ion-img 
+      [alt]="hero.name" 
+      [src]="hero.thumbnail.fullPath"
+      (ionError)="onImageError($event)"
+      class="hero-image"
+    ></ion-img>
+    <div class="hero-image-overlay"></div>
+  </div>
+  
+  <div class="hero-info">
+    <h1 class="hero-name">{{ hero.name }}</h1>
+    <p class="hero-description" *ngIf="hero.description">
+      {{ hero.description }}
+    </p>
+    <p class="hero-description no-description" *ngIf="!hero.description">
+      {{ 'heroes.details.no_description' | translate }}
+    </p>
+  </div>
+</div>

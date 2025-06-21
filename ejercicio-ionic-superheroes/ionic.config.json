@@ -1,0 +1,8 @@
+{
+  "name": "prueba-tecnica-david-aperador",
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
+  "type": "angular"
+}

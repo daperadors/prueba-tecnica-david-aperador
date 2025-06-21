@@ -1,0 +1,7 @@
+{
+  "appId": "com.prueba_tecnica_david_aperador.app",
+  "appName": "prueba-tecnica-david-aperador",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www"
+}

@@ -1,0 +1,18 @@
+<ng-container>
+  <div class="empty-state">
+    <ion-icon name="people-outline" class="empty-icon"></ion-icon>
+    <ion-text color="dark">
+      <h2>{{'heroes.list.no_data.title' | translate }}</h2>
+    </ion-text>
+    <ion-text color="medium">
+      <p>{{'heroes.list.no_data.description' | translate }}</p>
+    </ion-text>
+    <ion-button 
+      fill="outline" 
+      color="primary"
+      (click)="refresh.emit()">
+      <ion-icon slot="start" name="refresh-outline"></ion-icon>
+      {{'heroes.list.actions.update' | translate }}
+    </ion-button>
+  </div>
+</ng-container>

@@ -1,0 +1,25 @@
+{
+    "heroes": {
+        "list": {
+            "title": "List of Heroes",
+            "superheroes": "Superheroes",
+            "no_data": {
+                "title": "No superheroes available",
+                "description": "No superheroes were found at this time."
+            },
+            "actions": {
+                "click_action": "Touch any hero to see more details",
+                "update": "Update"
+            }
+        },
+        "details": {
+            "no_description": "No description available for this hero.",
+            "more_information": "More information",
+            "items": {
+                "comics": "Comics",
+                "series": "Series",
+                "stories": "Stories"
+            }
+        }
+    }
+}

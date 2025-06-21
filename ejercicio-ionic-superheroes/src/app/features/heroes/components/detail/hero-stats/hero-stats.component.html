@@ -1,0 +1,41 @@
+<div class="stats-section">
+  <h2 class="section-title">{{'heroes.details.more_information' | translate }}</h2>
+
+  <ion-card class="stats-card">
+    <ion-card-content>
+      <div class="stats-grid">
+
+        <div class="stat-item">
+          <div class="stat-icon comics">
+            <ion-icon name="book-outline"></ion-icon>
+          </div>
+          <div class="stat-content">
+            <div class="stat-number">{{hero.comics.available | number}}</div>
+            <div class="stat-label">{{'heroes.details.items.comics' | translate }}</div>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon series">
+            <ion-icon name="videocam-outline"></ion-icon>
+          </div>
+          <div class="stat-content">
+            <div class="stat-number">{{hero.series.available | number}}</div>
+            <div class="stat-label">{{'heroes.details.items.series' | translate }}</div>
+          </div>
+        </div>
+
+        <div class="stat-item">
+          <div class="stat-icon stories">
+            <ion-icon name="library-outline"></ion-icon>
+          </div>
+          <div class="stat-content">
+            <div class="stat-number">{{hero.stories.available | number}}</div>
+            <div class="stat-label">{{'heroes.details.items.stories' | translate }}</div>
+          </div>
+        </div>
+
+      </div>
+    </ion-card-content>
+  </ion-card>
+</div>

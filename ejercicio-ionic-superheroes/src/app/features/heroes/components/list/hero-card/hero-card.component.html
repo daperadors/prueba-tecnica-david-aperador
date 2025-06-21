@@ -1,0 +1,25 @@
+<ion-card 
+class="hero-card"
+button="true"
+(click)="goToHero()"
+[attr.aria-label]="'Ver detalles de ' + hero.name">
+
+<ion-card-content class="hero-card-content">
+  <div class="hero-avatar-container">
+    <ion-avatar class="hero-avatar">
+      <img 
+        [alt]="hero.name" 
+        [src]="hero.thumbnail.fullPath"
+        (error)="onImageError($event)"
+        loading="lazy"
+      />
+    </ion-avatar>
+  </div>
+  
+  <ion-text color="dark" class="hero-name-text">
+    <h3>{{hero.name}}</h3>
+  </ion-text>
+  
+  <ion-ripple-effect></ion-ripple-effect>
+</ion-card-content>
+</ion-card>

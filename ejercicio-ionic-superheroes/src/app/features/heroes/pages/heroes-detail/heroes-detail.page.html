@@ -1,0 +1,26 @@
+<ion-header class="hero-header">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ng-container *ngIf="!hero">
+      <ion-title>
+        <ion-skeleton-text [animated]="true"></ion-skeleton-text>
+      </ion-title>
+    </ng-container>
+    <ng-container *ngIf="!!hero">
+      <ion-title>{{hero.name || '-'}}</ion-title>
+    </ng-container>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="light" class="hero-content">
+  
+  <app-hero-loading-skeleton-detail *ngIf="!hero"></app-hero-loading-skeleton-detail>
+
+  <ng-container *ngIf="!!hero" color="light">
+    <app-hero-profile [hero]="hero"></app-hero-profile>
+    <app-hero-stats [hero]="hero"></app-hero-stats>
+  </ng-container>
+
+</ion-content>

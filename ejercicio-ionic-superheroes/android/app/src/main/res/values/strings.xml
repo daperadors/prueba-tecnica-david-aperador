@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">prueba-tecnica-david-aperador</string>
+    <string name="title_activity_main">prueba-tecnica-david-aperador</string>
+    <string name="package_name">com.prueba_tecnica_david_aperador.app</string>
+    <string name="custom_url_scheme">com.prueba_tecnica_david_aperador.app</string>
+</resources>

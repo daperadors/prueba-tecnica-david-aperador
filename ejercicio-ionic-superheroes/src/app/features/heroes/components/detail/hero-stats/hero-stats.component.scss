@@ -1,0 +1,110 @@
+@import 'features/hero/variables-detail.scss';
+@import 'mixins.scss';
+
+.stats-section {
+    padding: 0 $spacing-md $spacing-lg;
+
+    .section-title {
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: $text-primary;
+        margin: 0 0 $spacing-md 0;
+        padding-left: $spacing-xs;
+    }
+
+    .stats-card {
+        @include card-style;
+        margin: 0;
+
+        ion-card-content {
+            padding: $spacing-lg;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: $spacing-lg;
+
+            @media (min-width: 576px) {
+                grid-template-columns: repeat(3, 1fr);
+                gap: $spacing-md;
+            }
+        }
+
+        .stat-item {
+            display: flex;
+            align-items: center;
+            gap: $spacing-md;
+            padding: $spacing-md;
+            border-radius: $spacing-sm;
+            transition: all 0.3s ease;
+
+            &:hover {
+                background: rgba(0, 0, 0, 0.02);
+                transform: translateY(-2px);
+            }
+
+            .stat-icon {
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+                @include flex-center;
+                font-size: 1.5rem;
+                color: white;
+                flex-shrink: 0;
+
+                &.comics {
+                    @include gradient-overlay(#e53935, #c62828);
+                }
+
+                &.series {
+                    @include gradient-overlay(#1e88e5, #1565c0);
+                }
+
+                &.stories {
+                    @include gradient-overlay(#fb8c00, #f57c00);
+                }
+            }
+
+            .stat-content {
+                flex: 1;
+
+                .stat-number {
+                    font-size: 1.8rem;
+                    font-weight: bold;
+                    color: $text-primary;
+                    line-height: 1;
+                    margin-bottom: $spacing-xs;
+                }
+
+                .stat-label {
+                    font-size: 0.9rem;
+                    color: $text-secondary;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    letter-spacing: 0.5px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .hero-content {
+        .hero-profile {
+            .hero-info {
+                padding: $spacing-md;
+
+                .hero-name {
+                    font-size: 1.6rem;
+                }
+
+                .hero-description {
+                    font-size: 0.85rem;
+                }
+            }
+        }
+
+
+    }
+}
